@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  fs-mongodb:
+    container_name: fs-mongodb
+    image: mongodb/mongodb-community-server:4.4.2-ubuntu2004
+    ports:
+      - "27017:27017"
+    volumes:
+      - fs-mongo-data:/data/db
+    restart: unless-stopped
+  # fashion-stream:
+  #   build:
+  #     context: .
+  #   ports:
+  #     - "3774:3000"
+
+volumes:
+  fs-mongo-data:

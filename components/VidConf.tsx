@@ -11,7 +11,7 @@ function VidConf() {
     return (
         <div>
             <SuperVizRoomProvider
-                developerKey={"<dev-key-here>"}
+                developerKey={"jszpg1xs00dr0xzbwf1whvhqxe4ou8"}
                 group={{
                     id: "GROUP_ID",
                     name: "GROUP_NAME",
